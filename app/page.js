@@ -1,74 +1,56 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 flex flex-col items-center justify-center p-10">
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">
+    <main className="max-w-6xl mx-auto px-6 py-16">
+      <h1 className="text-5xl font-extrabold text-center">
         Fail2LearnLab
       </h1>
-      <p className="text-lg text-gray-600 mb-10">
-        Choose a research theme:
+      <p className="text-center text-gray-500 mt-4 text-lg">
+        Choose a failure theme:
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Pharma</h2>
-          <p className="text-gray-600 mt-2">
-            Explore failed experiments in pharmaceuticals
-          </p>
-        </a>
+      {/* …grille de cartes… */}
 
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Batteries</h2>
-          <p className="text-gray-600 mt-2">
-            Investigate battery experiments & safety
-          </p>
-        </a>
+      {/* Pharma */}
+      <Card
+        title="Pharma"
+        description="Explore pharmaceutical failures and lessons learned"
+        href="/pharma"
+      />
 
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Materials</h2>
-          <p className="text-gray-600 mt-2">
-            Check material synthesis outcomes
-          </p>
-        </a>
+      {/* Batteries */}
+      <Card
+        title="Batteries"
+        description="Investigate battery failure cases & safety incidents"
+        href="/batteries"
+      />
 
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Catalysis</h2>
-          <p className="text-gray-600 mt-2">
-            Analyze catalytic reactions
-          </p>
-        </a>
+      {/* Materials */}
+      <Card
+        title="Materials"
+        description="Check material synthesis failures & outcomes"
+        href="/materials"
+      />
 
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Polymers</h2>
-          <p className="text-gray-600 mt-2">
-            Discover polymerization failures
-          </p>
-        </a>
+      {/* Catalysis */}
+      <Card
+        title="Catalysis"
+        description="Analyze catalytic reaction failures"
+        href="/catalysis"
+      />
 
-        <a
-          href="#"
-          className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:bg-gray-50 transition"
-        >
-          <h2 className="text-xl font-semibold text-indigo-600">Chemistry Lab</h2>
-          <p className="text-gray-600 mt-2">
-            General chemical experiments
-          </p>
-        </a>
-      </div>
+      {/* Polymers */}
+      <Card
+        title="Polymers"
+        description="Discover polymerization failures"
+        href="/polymers"
+      />
+
+      {/* Chemistry Lab */}
+      <Card
+        title="Chemistry Lab"
+        description="Explore general chemical experiment failures"
+        href="/chemistry"
+      />
     </main>
   )
 }
