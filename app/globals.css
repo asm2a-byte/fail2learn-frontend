@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ton CSS perso optionnel */
+/* Ton CSS perso (facultatif) */
 body {
-  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fafafa;
 }
